@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net9.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MySqlConnector" Version="2.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Forms\Registrations.cs">
+        <SubType>UserControl</SubType>
+      </Compile>
+      <Compile Update="Forms\Languages.cs">
+        <SubType>UserControl</SubType>
+      </Compile>
+      <Compile Update="BaseForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\Navigation.cs">
+        <SubType>UserControl</SubType>
+      </Compile>
+      <Compile Update="Forms\Users.cs">
+        <SubType>UserControl</SubType>
+      </Compile>
+    </ItemGroup>
+
+</Project>
