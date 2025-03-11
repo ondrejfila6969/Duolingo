@@ -1,6 +1,6 @@
 namespace Duolingo;
 
-static class Program
+static class kProgram
 {
     /// <summary>
     ///  The main entry point for the application.

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q36imnLqiLQ=",
+  "dgSpecHash": "nK9rewOqEKc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ondra\\RiderProjects\\Duolingo\\Duolingo\\Duolingo.csproj",
+  "projectFilePath": "C:\\Users\\Ondra\\OneDrive\\Plocha\\Duolingo\\Duolingo\\Duolingo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ondra\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\Ondra\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",

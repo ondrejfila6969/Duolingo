@@ -204,11 +204,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ondra\\RiderProjects\\Duolingo\\Duolingo\\Duolingo.csproj",
+      "projectUniqueName": "C:\\Users\\Ondra\\OneDrive\\Plocha\\Duolingo\\Duolingo\\Duolingo.csproj",
       "projectName": "Duolingo",
-      "projectPath": "C:\\Users\\Ondra\\RiderProjects\\Duolingo\\Duolingo\\Duolingo.csproj",
+      "projectPath": "C:\\Users\\Ondra\\OneDrive\\Plocha\\Duolingo\\Duolingo\\Duolingo.csproj",
       "packagesPath": "C:\\Users\\Ondra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ondra\\RiderProjects\\Duolingo\\Duolingo\\obj\\",
+      "outputPath": "C:\\Users\\Ondra\\OneDrive\\Plocha\\Duolingo\\Duolingo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

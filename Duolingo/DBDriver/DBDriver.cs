@@ -266,4 +266,21 @@ public class DBDriver
             }
         }
     }
+    
+    public bool RegistrationAlreadyExists(int userId, int languageId)
+    {
+        using (MySqlConnection connection = GetConnection())
+        {
+            connection.Open();
+
+            string command = "SELECT COUNT(*) FROM registrations WHERE user_id = @userId AND language_id = @languageId";
+            MySqlCommand cmd = new MySqlCommand(command, connection);
+            cmd.Parameters.AddWithValue("@userId", userId);
+            cmd.Parameters.AddWithValue("@languageId", languageId);
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+            return count > 0;
+        }
+    }
+    
 }

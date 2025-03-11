@@ -190,10 +190,17 @@ public partial class Registrations : UserControl
     {
         if (selectedUserId != null && selectedLanguageId != null)
         {
-            CreateNewRegistration( int.Parse(selectedUserId), int.Parse(selectedLanguageId));
-            error_label.Text = "";
-            selectedUserId = null;
-            selectedLanguageId = null;
+            if (!_dbDriver.RegistrationAlreadyExists(int.Parse(selectedUserId), int.Parse(selectedLanguageId)))
+            { 
+                CreateNewRegistration(int.Parse(selectedUserId), int.Parse(selectedLanguageId));
+                selectedUserId = null;
+                selectedLanguageId = null;
+            }
+            else
+            {                
+                error_label.ForeColor = Color.Red;
+                error_label.Text = "This registration already exists!";
+            }
         }
         else if(selectedUserId != null && selectedLanguageId == null)
         {
