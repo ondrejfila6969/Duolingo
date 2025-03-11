@@ -30,6 +30,7 @@ public partial class Languages : UserControl
         {
             CreateNewLanguage(create_language_textbox.Text);
             create_language_textbox.Text = "";
+            error_label.Text = "";
         }
         else
         {
@@ -124,6 +125,7 @@ public partial class Languages : UserControl
             return;
         }
         _dbDriver.DeleteLanguage(id);
+        error_label.Text = "";
         if (_dbDriver?.ThrownException is not null)
         {
             error_label.ForeColor = Color.Red;

@@ -195,6 +195,7 @@ public partial class Registrations : UserControl
                 CreateNewRegistration(int.Parse(selectedUserId), int.Parse(selectedLanguageId));
                 selectedUserId = null;
                 selectedLanguageId = null;
+                error_label.Text = "";
             }
             else
             {                

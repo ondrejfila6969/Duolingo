@@ -53,6 +53,7 @@ public partial class Users : UserControl
         if (create_user_textbox.Text != "")
         {
             CreateNewUser(create_user_textbox.Text);
+            error_label.Text = "";
             create_user_textbox.Text = "";
         }
         else
@@ -119,6 +120,7 @@ public partial class Users : UserControl
         {
             DeleteUserWithId(delete_user_textbox.Text);
             delete_user_textbox.Text = "";
+            error_label.Text = "";
         }
     }
     
@@ -135,6 +137,7 @@ public partial class Users : UserControl
             return;
         }
         _dbDriver.DeteteUser(id);
+        error_label.Text = "";
         if (_dbDriver?.ThrownException is not null)
         {
             error_label.ForeColor = Color.Red;
